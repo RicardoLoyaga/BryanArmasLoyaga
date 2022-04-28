@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BryanArmasLoyaga.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUser" HorizontalTextAlignment="End" TextColor="Red" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" IsReadOnly="True" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Total" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtTotal" IsReadOnly="True" Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

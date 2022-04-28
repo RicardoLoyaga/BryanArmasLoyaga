@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BryanArmasLoyaga.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUser" HorizontalTextAlignment="End" TextColor="Red"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Keyboard="Text" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Cuota inicial" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtCuota" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Pago mensual" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtPago" IsReadOnly="True" Grid.Row="2" Grid.Column="1"/>
+                <Button x:Name="btnCalcular" Text="Calcular" Grid.Row="3" Grid.Column="1" Clicked="btnCalcular_Clicked" BackgroundColor="LightBlue"/>
+                <Button x:Name="btnGuardar" Text="Guardar" Grid.Row="4" Grid.ColumnSpan="2" Clicked="btnGuardar_Clicked" BackgroundColor="Green" CornerRadius="15" TextColor="Wheat"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

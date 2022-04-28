@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BryanArmasLoyaga.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Image Source="LOGO.png" Scale="1" Grid.Row="0" Grid.ColumnSpan="2"/>
+                <Label Text="Usuario: " Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Contraseña: " Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtContrasena" Grid.Row="2" Grid.Column="1" IsPassword="True"/>
+                <Button x:Name="btnLogin" Grid.Row="3" Grid.ColumnSpan="2" CornerRadius="15" BackgroundColor="Green" 
+                        Clicked="btnLogin_Clicked" TextColor="White" Text="Iniciar Sesión"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
